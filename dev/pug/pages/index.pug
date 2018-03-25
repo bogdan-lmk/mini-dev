@@ -1,0 +1,231 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Main Page'
+	- var pageClass = 'index-page'
+
+block content
+	.block.block--main
+		.block-overlay
+		.container
+			include ../modules/header	
+			.block--main-content
+				h2.block--main-content-subtitle best creative studio
+				h1.block--main-content-title design / branding / wordpress
+				h2.block--main-content-subtitle we make great ideas happen
+				button.btn.btn--learn-more Learn More	
+	.block.block--about 
+		.container
+			.block-heading.block-heading--about
+				.block-heading-title about
+				.block-heading-text
+					p roin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet 
+			.story
+				.content-icon.content-icon--story
+					+icon('small-light-bulb','icon--bulb')
+				.story-content
+					h3.story-title our story
+					p.story-description Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+					p.text.story-text Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				.story-image
+					img.story-img(src="/static/img/content/story-pic.png")
+			.our-skills
+				.our-skills-image
+					img(src="/static/img/content/phones.png")
+				.our-skills-content
+					.our-skills-content-top
+						.content-icon.content-icon--our-skills
+							+icon('parameters','icon--parameters')
+						p.text.our-skill-text Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					.our-skills-content-bottom
+						.progress-bar-block
+							span.progress-bar-name design 
+							span.separ /
+							span.progress-bar-percent
+							.progress-bar.progress-bar--design
+						.progress-bar-block
+							span.progress-bar-name development
+							span.separ /
+							span.progress-bar-percent
+							.progress-bar.progress-bar--development
+						.progress-bar-block
+							span.progress-bar-name wordpress
+							span.separ /
+							span.progress-bar-percent
+							.progress-bar.progress-bar--wp
+						.progress-bar-block
+							span.progress-bar-name drupal
+							span.separ /
+							span.progress-bar-percent
+							.progress-bar.progress-bar--drp
+	.block.block--quote
+		.block-quote-overlay
+		.container
+			.quote-content
+				span.quote-text  Simplicity is about subtracting the obvious  and adding the meaningful
+				span.quote-author John Maeda		 
+	.block.block--team
+		.container
+			.block-heading.block-heading--team
+				.block-heading-title team
+				.block-heading-text
+					p Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet 
+			.team-content
+				.team-member
+					.team-member-image
+						img(src="/static/img/content/member.png")
+					span.team-member-name John Doe
+					span.team-member-position Frontend
+					span.team-separator
+					p.team-member-description Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+					.team-member-social
+						a(href="/").team-member-socials
+							+icon('twitter','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('facebook','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('dribbble','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('google-plus','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('linkedin','team-socials','team-twitter')
+				.team-member
+					.team-member-image
+						img(src="/static/img/content/member.png")
+					span.team-member-name John Doe
+					span.team-member-position Frontend
+					span.team-separator
+					p.team-member-description Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+					.team-member-social
+						a(href="/").team-member-socials
+							+icon('twitter','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('facebook','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('dribbble','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('google-plus','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('linkedin','team-socials','team-twitter')
+				.team-member
+					.team-member-image
+						img(src="/static/img/content/member.png")
+					span.team-member-name John Doe
+					span.team-member-position Frontend
+					span.team-separator
+					p.team-member-description Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+					.team-member-social
+						a(href="/").team-member-socials
+							+icon('twitter','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('facebook','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('dribbble','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('google-plus','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('linkedin','team-socials','team-twitter')
+				.team-member
+					.team-member-image
+						img(src="/static/img/content/member.png")
+					span.team-member-name John Doe
+					span.team-member-position Frontend
+					span.team-separator
+					p.team-member-description Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+					.team-member-social
+						a(href="/").team-member-socials
+							+icon('twitter','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('facebook','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('dribbble','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('google-plus','team-socials','team-twitter')
+						a(href="/").team-member-socials
+							+icon('linkedin','team-socials','team-twitter')
+	.block.block--quote
+		.block-quote-overlay
+		.container
+			.quote-content.quote-content--facts
+				.fact
+					.fact-image
+						+icon('coffee','fact-icon')
+					span.fact-amount 6K+
+					span.fact-name Coffees 
+				.fact
+					.fact-image
+						+icon('inbox','fact-icon')
+					span.fact-amount 743
+					span.fact-name Projects
+				.fact
+					.fact-image
+						+icon('user-avatar','fact-icon')
+					span.fact-amount 435
+					span.fact-name Clients
+				.fact
+					.fact-image
+						+icon('like','fact-icon')
+					span.fact-amount 225
+					span.fact-name Awards
+	.block.block--service
+		.container
+			.block-heading.block-heading--service
+				.block-heading-title service
+				.block-heading-text
+					p roin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet 		
+			.service-content
+				.service
+					.service-image
+						+icon('big-star','service-icon')
+					span.service-name designing
+					p.service-description Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+				.service
+					.service-image
+						+icon('chemistry','service-icon')
+					span.service-name developing
+					p.service-description Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+				.service
+					.service-image
+						+icon('the-world','service-icon')
+					span.service-name branding
+					p.service-description Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+			.package-content
+				.package-desc
+					.content-icon.content-icon--story
+						+icon('small-light-bulb','icon--bulb')
+					h3.pricing-title Packege Pricing
+					p.text.pricing-text Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+				.pricing-content
+					.single-price
+						.single-price-header
+							span.single-price-name basic
+							span.single-price-separator
+							span.single-price-cost $35
+						span.single-price-desc first description
+						span.single-price-desc second description
+						span.single-price-desc third description
+						span.single-price-desc fourth description
+						.single-price-footer
+							button.btn.btn-purchase Purchase
+					.single-price
+						.single-price-header
+							span.single-price-name basic
+							span.single-price-separator
+							span.single-price-cost $35
+						span.single-price-desc first description
+						span.single-price-desc second description
+						span.single-price-desc third description
+						span.single-price-desc fourth description
+						.single-price-footer
+							button.btn.btn-purchase Purchase
+					.single-price
+						.single-price-header
+							span.single-price-name basic
+							span.single-price-separator
+							span.single-price-cost $35
+						span.single-price-desc first description
+						span.single-price-desc second description
+						span.single-price-desc third description
+						span.single-price-desc fourth description
+						.single-price-footer
+							button.btn.btn-purchase Purchase

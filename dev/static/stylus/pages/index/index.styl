@@ -1,0 +1,408 @@
+.block
+  display flex
+  justify-content: center
+  margin-bottom: 95px
+
+.block--main
+  height 100vh
+  width 100%
+  padding-top:80px
+  position: relative
+  background-image: url("/static/img/content/venice.jpg")
+
+.block-overlay
+  position absolute
+  width 100%
+  height 100%
+  background #34495e
+  top 0
+  left 0
+  opacity: 0.75
+  z-index: -1
+
+.block--main-content
+  margin-top: 5%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-transform: uppercase
+  z-index: 11
+  color: whiteColor
+
+.block--main-content-subtitle
+  font-family: mainFont
+  font-weight: 200
+  font-size: rem(28px)
+
+.block--main-content-title
+  font-weight: 700
+  font-size: rem(40px)
+
+.block-heading
+    display: flex
+    padding: 0 10%
+    margin-bottom: 110px
+.block-heading-title
+    display: flex
+    font-size: 30px
+    text-transform: uppercase
+    position:relative
+    font-family: mainFont
+    font-weight: 900
+    padding-right: 50px
+    &:after
+      content: ''
+      display: block
+      width: 4px
+      height: 45px
+      position: absolute
+      background-color: lightOrangeColor
+      right: 20px
+      top 0
+
+.block-heading-text
+  text-transform: uppercase
+  font-size: 16px
+.story
+  display: flex
+  justify-content: space-between
+.story-content
+  display: flex
+  flex-direction: column
+  padding-bottom: 120px
+  width: 40%
+.content-icon
+  display: flex
+  position: relative
+  height: 125px
+  width: 125px
+  border-radius: 50%
+  border: 2px solid lightOrangeColor
+  justify-content: center
+  align-items: center
+
+.icon--bulb
+  width: 35px
+  height: 45px
+
+.story-title
+  font-size: rem(20px)
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 20px
+
+.story-description
+  color: #e74c3c
+  margin-bottom: 45px
+
+.text
+  line-height: 28px
+  color: #7f7f7f
+  font-size: 18px
+
+.our-skills
+  border-top: 2px solid #e6e6e6
+  padding-top: 110px
+  display: flex
+.icon--parameters
+  width: 35px
+  height: 45px
+
+.our-skills-image
+  margin-right: 90px
+
+.our-skills-content-top
+  display: flex
+.content-icon--our-skills
+  margin-right: 20px
+.our-skill-text
+  width: 75%
+
+.progress-bar-block
+  position: relative
+  margin-bottom: 45px
+
+.progress-bar-name
+  text-transform: uppercase
+  font-weight: 700
+  margin-bottom: 15px
+
+.progress-bar
+  margin-top: 15px
+
+.block--quote
+  height: 75vh
+  background: url('/static/img/content/landscape.jpg') no-repeat center
+  background-size: cover
+  position: relative
+  justify-content: center
+  align-items: center
+.block-quote-overlay
+  position absolute
+  width 100%
+  height 100%
+  background #000000
+  top 0
+  left 0
+  opacity: 0.55
+  z-index: 1
+
+.quote-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: whiteColor
+  padding: 0 10%
+  span
+    z-index: 11
+
+.quote-text
+  font-size: rem(40px)
+  text-align: center
+  font-weight: 700
+
+
+.quote-author
+  font-size: rem(24px)
+  margin-top: 60px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    background-color: lightOrangeColor
+    width: 50px
+    height: 4px
+    top: -15px
+    left: 40px
+
+.team-content
+  display: flex
+  flex-flow: wrap
+
+
+.team-member
+  height: 100%
+  max-height: 100%
+  width: 265px
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-right: 30px
+  border-top: 5px solid transparent
+  &:last-child
+    margin-right: 0px
+  &:hover
+    background: #f0f0f0
+    transition: 0.6s all ease-in-out
+    border-top: 5px solid lightOrangeColor
+  &:hover .team-separator
+    transition: 0.6s all ease-in-out
+    background: #e74c3c
+.team-member-image
+  width: 188px
+  height: 188px
+  border-radius: 50%
+  border: 2px solid #ededed
+  margin-top: 30px
+
+.team-member-name
+  font-size: rem(20px)
+  font-weight: 700
+  margin: 30px 0px 10px 0px
+  text-transform: uppercase
+
+.team-member-position
+  color: #7e7e7e
+  font-size: rem(15px)
+
+.team-separator
+  width: 30px
+  height: 4px
+  background: #cccccc
+  margin: 15px 0 20px 0
+
+.team-member-description
+  text-align: center
+  color: #7e7e7e
+  margin-bottom: 20px
+  line-height: 30px
+  padding: 0 15px
+
+.team-member-social
+  margin-bottom: 20px
+
+.team-member-socials
+  margin-right: 15px
+  &:last-child
+    margin-right: 0px
+
+.team-socials
+  width: 18px
+  height: 18px
+  fill: #999999
+  &:hover
+    fill: lightOrangeColor
+    transition: 0.3s all ease-in-out
+
+.quote-content--facts
+  flex-flow: wrap
+  padding: 0
+.fact
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-right: 100px
+  &:last-child
+    margin-right: 0px
+  &:hover .fact-image
+   transition: all 0.4s ease-in-out
+   border: 2px solid whiteColor
+  &:hover .fact-icon
+    transition: all 0.4s ease-in
+    fill: lightOrangeColor
+.fact-image
+  width: 150px
+  height: 150px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 2px solid lightOrangeColor
+  border-radius: 50%
+  z-index: 999999
+
+.fact-icon
+  fill: whiteColor
+  height: 35px
+  width: 45px
+  z-index: 111
+
+.fact-amount
+  font-size: rem(45px)
+  font-weight: 700
+  margin-top: 10px
+
+.fact-name
+  font-size: rem(25px)
+  font-weight: 700
+
+.service-content
+  display: flex
+  flex-flow: wrap
+  padding-bottom: 120px
+  border-bottom: 2px solid #e6e6e6
+
+.service
+  max-height: 100%
+  width: 365px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  margin-right: 35px
+  &:last-child
+    margin-right: 0
+  &:hover .service-image
+    background: lightOrangeColor
+    transition: all 0.4s ease-in
+  &:hover .service-icon
+    fill: whiteColor
+    transition: all 0.4s ease-in
+
+.service-image
+  width: 105px
+  height: 105px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 2px solid lightOrangeColor
+  border-radius: 50%
+.service-name
+  font-size: rem(20px)
+  font-weight: 700
+  margin: 30px 0px 20px 0px
+  text-transform: uppercase
+
+.service-description
+  color: #7e7e7e
+  margin-bottom: 20px
+  line-height: 30px
+  padding: 0 5px
+
+.service-icon
+  width: 28px
+  height: 28px
+
+.package-desc
+  display: flex
+  flex-direction: column
+  width: 35%
+.package-content
+  display: flex
+  flex-flow: wrap
+  padding-top: 120px
+
+.pricing-title
+    font-size: rem(20px)
+    font-weight: 700
+    margin: 30px 0px 20px 0px
+    text-transform: uppercase
+
+.single-price
+  display: flex
+  width: 250px
+  flex-direction: column
+  height: 100%
+  max-height: 100%
+  border: 1px solid #e6e6e6
+  align-items: center
+  &:hover .single-price-header
+    background: lightOrangeColor
+    color: whiteColor
+    transition: all 0.7s ease
+  &:hover .single-price-separator
+    background: whiteColor
+    transition: all 0.7s ease
+  &:hover .single-price-header
+    cursor: pointer
+    transition:  all 0.7s ease
+    transform: scale(1.07)
+  &:hover
+    cursor: pointer
+.single-price-header
+  display: flex
+  flex-direction: column
+  padding: 30px 0
+  align-items: center
+  justify-content: center
+  width: 100%
+  border-bottom: 1px solid #e6e6e6
+
+
+.single-price-name
+  font-size: rem(22px)
+  font-weight: 700
+  text-transform: uppercase
+
+.single-price-separator
+  width: 50px
+  height: 4px
+  background: lightOrangeColor
+  margin: 10px 0
+
+.single-price-cost
+  font-size: rem(22px)
+  font-weight: 700
+  text-transform: uppercase
+
+.single-price-desc
+  padding: 20px 0px
+  width: 100%
+  border-bottom: 1px solid #e6e6e6
+  text-align: center
+
+.single-price-footer
+  padding: 30px 0

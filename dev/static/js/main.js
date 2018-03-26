@@ -134,11 +134,13 @@ $('.portfolio-gallery').slick({
   },
 });
 
-$('	.testimonials-block').slick({
+$('.testimonials-block').slick({
   arrows: false,
   dots: true,
   dotsClass: 'testimonial-dots',
   customPaging: function(slider, i) {
       return $('<button class="testimonial-gallery-dot" <button/>');
   },
+  autoplay: false,
+  autoplaySpeed: 2500
 });

@@ -41,7 +41,6 @@
 
 .block-heading
     display: flex
-    padding: 0 10%
     margin-bottom: 110px
 .block-heading-title
     display: flex
@@ -108,7 +107,10 @@
 .icon--parameters
   width: 35px
   height: 45px
-
+.our-skills-content
+  display: flex
+  flex-direction: column
+  width: 50%
 .our-skills-image
   margin-right: 90px
 
@@ -146,7 +148,7 @@
   top 0
   left 0
   opacity: 0.55
-  z-index: 1
+  z-index: 0
 
 .quote-content
   display: flex
@@ -166,17 +168,16 @@
 
 .quote-author
   font-size: rem(24px)
-  margin-top: 60px
-  position: relative
-  &:before
-    content: ''
-    position: absolute
-    display: block
-    background-color: lightOrangeColor
-    width: 50px
-    height: 4px
-    top: -15px
-    left: 40px
+
+.quote-separator
+  display: flex
+  background-color: lightOrangeColor
+  width: 50px
+  height: 4px
+  margin: 40px 0 15px 0
+  z-index: 11
+
+
 
 .team-content
   display: flex
@@ -345,6 +346,8 @@
   flex-flow: wrap
   padding-top: 120px
 
+.pricing-content
+  display:flex
 .pricing-title
     font-size: rem(20px)
     font-weight: 700
@@ -370,6 +373,10 @@
     cursor: pointer
     transition:  all 0.7s ease
     transform: scale(1.07)
+  &:hover .single-price-footer
+    cursor: pointer
+    transition:  all 0.7s ease
+    transform: scale(1.1)
   &:hover
     cursor: pointer
 .single-price-header
@@ -406,3 +413,230 @@
 
 .single-price-footer
   padding: 30px 0
+
+
+.testimonial
+  z-index: 11
+  display: flex!important
+  flex-direction: column
+  align-items: center
+
+.testimonials-user-name
+  font-size: rem(22px)
+  text-transform: uppercase
+  color: whiteColor
+  z-index: 11
+  font-weight: 900
+
+.testimonials-quote-separator
+  margin: 20px 0 40px 0
+
+.testimonials-user-text
+  z-index: 11
+  color: whiteColor
+  font-style: italic
+  font-weight: 300
+  font-size: rem(22px)
+  width: 80%
+  text-align: center
+  line-height: rem(40px)
+
+
+.testimonials-user-image
+  display: flex
+  width: 105px
+  height: 105px
+  border-radius: 50%
+  border 1px solid whiteColor
+  margin: 25px 0
+  z-index: 11
+
+.testimonial-dots
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+
+.testimonial-gallery-dot
+  display: flex
+  width: 12px
+  height: 12px
+  background-color: whiteColor
+  opacity: 0.5
+  border-radius: 50%
+  margin-right: 5px
+  cursor: pointer
+  border: none
+  &:hover
+    transition: 0.3s all ease-in
+    opacity: 1
+
+.testimonial-gallery-dot--active
+  opacity: 1
+  
+.portfolio-carousel
+  display: flex
+  flex-direction: column
+  width: 100%
+  position: relative
+  padding-bottom: 185px
+  border-bottom: 2px solid #e6e6e6
+
+.portfolio-slide
+  display: none
+  position: relative
+  margin-bottom: 50px
+  height: 580px
+
+.portfolio-slide--showing
+  display: flex
+  position: relative
+  margin-bottom: 50px
+
+.p-slide-img
+  width: 100%
+  max-height: 100%
+
+.portfolio-gallery-dots
+  position: absolute
+  top: 50%
+  right: 20px
+
+
+.portfolio-gallery-dot
+  display: flex
+  width: 15px
+  height: 15px
+  background-color: whiteColor
+  opacity: 0.5
+  border-radius: 50%
+  margin-bottom: 5px
+  cursor: pointer
+  border: none
+  &:hover
+    transition: 0.3s all ease-in
+    opacity: 1
+  &:focus
+    transition: 0.3s all ease-in
+    opacity: 1
+
+
+
+.portfolio-gallery-controls
+  display: flex
+  align-self: center
+
+.portfolio-gallery-arrow
+  padding: 10px
+  border: 1px solid #e6e6e6
+  margin-right: 5px
+
+.g-control-icon
+  width: 12px
+  height: 12px
+
+.projects
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.nav-projects
+  width: 60%
+  margin-top: 110px
+  margin-bottom: 80px
+
+.nav-link--project
+  color: blackColor
+  font-size: rem(14px)
+  font-weight: 900
+  &:hover
+    color: lightOrangeColor
+
+.nav-list--projects
+  padding: 0 20px
+  &:after
+    color: #b3b3b3
+    right: -8px
+
+.projects-content
+  display: flex
+  flex-flow: wrap
+  width: 100%
+
+.single-project
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 25%
+  height: 280px
+  margin-bottom: 25px
+  &:hover
+    cursor: pointer
+  &:hover .project-title
+    transition: all 0.4s ease-in
+    color: lightOrangeColor
+  &:hover .single-project-image-overlay
+    opacity: 0.65
+    transition: all 0.6s ease-in-out
+  &:hover .overlay-circle
+    transform: translateY(0%)
+    transition: all 0.4s ease-in-out
+    animation-delay: 0.7s
+
+.single-project-image
+  position: relative
+  height: 80%
+
+.single-project-image-overlay
+  position: absolute
+  left: 0
+  top: 0
+  background: whiteColor
+  height: 100%
+  width: 100%
+  display: flex
+  opacity: 0
+  align-items: center
+  justify-content: center
+  transition: all 0.4s ease-in-out
+
+
+.overlay-circle
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100px
+  height: 100px
+  background: lightOrangeColor
+  border-radius: 50%
+  transform: translateY(-160%)
+  transition: all 0.4s ease-in-out
+  animation-delay: 0.7s
+
+.sp-img
+  max-width: 100%
+
+.single-project-info
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.project-title
+  font-size: rem(15px)
+  color: blackColor
+  font-weight: 900
+  text-transform: uppercase
+  margin: 20px 0 15px 0
+
+.project-type
+  font-size: rem(14px)
+  color: #b3b3b3
+  font-weight: 700
+  text-transform: capitalize
+
+.icon-add
+  width: 46px
+  height: 46px
+  fill: white

@@ -123,3 +123,22 @@ $(document).ready(function() { // Ждём загрузки страницы
 		}
 	});
 });
+
+$('.portfolio-gallery').slick({
+  prevArrow: $('.portfolio-gallery-arrow--left'),
+  nextArrow: $('.portfolio-gallery-arrow--right'),
+  dots:true,
+  dotsClass: 'portfolio-gallery-dots',
+  customPaging: function(slider, i) {
+      return $('<button class="portfolio-gallery-dot" <button/>');
+  },
+});
+
+$('	.testimonials-block').slick({
+  arrows: false,
+  dots: true,
+  dotsClass: 'testimonial-dots',
+  customPaging: function(slider, i) {
+      return $('<button class="testimonial-gallery-dot" <button/>');
+  },
+});

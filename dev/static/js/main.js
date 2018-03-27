@@ -141,6 +141,6 @@ $('.testimonials-block').slick({
   customPaging: function(slider, i) {
       return $('<button class="testimonial-gallery-dot" <button/>');
   },
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2500
 });

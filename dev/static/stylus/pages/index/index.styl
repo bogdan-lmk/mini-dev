@@ -321,6 +321,7 @@
   justify-content: center
   border: 2px solid lightOrangeColor
   border-radius: 50%
+
 .service-name
   font-size: rem(20px)
   font-weight: 700
@@ -382,7 +383,7 @@
   &:hover .single-price-footer
     cursor: pointer
     transition:  all 0.4s ease-in-out
-    
+
 
 .single-price-header
   display: flex
@@ -419,6 +420,8 @@
 .single-price-footer
   padding: 30px 0
 
+.testimonial.slick-slide
+  outline: none!important
 
 .testimonial
   z-index: 11
@@ -455,7 +458,8 @@
   border 1px solid whiteColor
   margin: 25px 0
   z-index: 11
-
+.testimonials-user-img
+  max-width: 100%
 .testimonial-dots
   display: flex
   align-items: center
@@ -477,8 +481,9 @@
     transition: 0.3s all ease-in
     opacity: 1
 
-.testimonial-gallery-dot--active
-  opacity: 1
+.testimonial-dots .slick-active
+  .testimonial-gallery-dot
+    opacity: 1
 
 .portfolio-carousel
   display: flex
@@ -526,7 +531,10 @@
     transition: 0.3s all ease-in
     opacity: 1
 
-
+.portfolio-gallery-dots .slick-active
+  .portfolio-gallery-dot
+    opacity: 1
+    transition: 0.3s all ease-in
 
 .portfolio-gallery-controls
   display: flex
@@ -616,7 +624,7 @@
   height: 100px
   background: lightOrangeColor
   border-radius: 50%
-  transform: translateY(-160%)
+  transform: translateY(-60%)
   transition: all 0.4s ease-in-out
   animation-delay: 0.7s
 
@@ -645,3 +653,150 @@
   width: 46px
   height: 46px
   fill: white
+
+.social-block-image
+  width: 104px
+  height: 104px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 2px solid whiteColor
+  border-radius: 50%
+
+.social-block
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.social-block-image
+  z-index: 11
+  &:hover
+    border: 2px solid lightOrangeColor
+    transition: 0.3s all ease-in-out
+  &:hover .service-icon--social
+    fill: whiteColor
+    transition: 0.3s all ease-in-out
+.service-icon--social
+  fill: lightOrangeColor
+
+.social-block-text
+  z-index: 11
+  color: whiteColor
+  font-size: rem(22px)
+  text-align: center
+  display: flex
+  width: 75%
+  line-height: rem(40px)
+  margin-top: 30px
+
+.social-block-link
+  color: lightOrangeColor
+  margin-left: 5px
+
+.block-heading--blog
+  margin-bottom: 150px
+
+.blog-content
+  display: flex
+  flex-flow: wrap
+
+.blog-post
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 45%
+  margin-right: 55px
+  margin-bottom: 35px
+  height: 100%
+  &:last-child
+    margin-right: 0
+    margin-bottom: 0px
+
+.blog-post-image
+  position: relative
+  height: 300px
+
+
+.blog-img
+  max-width: 100%
+  height: 100%
+
+.blog-content-wrap
+  display: flex
+
+.blog-post-content
+  position: relative
+  width: 80%
+  max-height: 100%
+  background: whiteColor
+  padding: 20px
+  margin-top: -50px
+
+.blog-post-content-title
+  text-transform: uppercase
+  margin-bottom: 40px
+
+.blog-post-content-text
+  margin-bottom: 30px
+
+.blog-icon
+  width: 35px
+  height: 35px
+  position: absolute
+  bottom: 0
+  left: 14%
+  background-color: #f39c12
+  fill: #fff
+  padding: 5px
+
+
+.blog-post-content-text
+  line-height: rem(30px)
+
+.blog-info
+  display: flex
+  flex-direction: column
+  width: 110px
+  max-width: 110px
+  padding-top: 40px
+  padding-right: 5px
+  text-align: right
+
+.blog-info-text
+  font-size: rem(14px)
+  color: #a7a7a7
+  margin-bottom: 5px
+
+.our-clients
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.our-clients-content
+  display: flex
+  flex-flow: wrap
+
+.our-clients-heading
+  font-size: rem(30px)
+  color: whiteColor
+  z-index: 11
+  text-transform: uppercase
+  margin-bottom: 50px
+
+.single-clients
+  display: flex
+  padding: 45px 15px
+  align-items: center
+  justify-content: center
+  margin-right: 45px
+  z-index: 11
+  border: 1px solid #4b5258
+  width: 225px
+  height: 70px
+  &:last-child
+    margin-right: 0
+
+.clients-img
+  max-width: 100%

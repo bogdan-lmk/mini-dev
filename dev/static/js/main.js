@@ -134,7 +134,7 @@ $('.portfolio-gallery').slick({
   },
 });
 
-$('	.testimonials-block').slick({
+$('.testimonials-block').slick({
   arrows: false,
   dots: true,
   dotsClass: 'testimonial-dots',

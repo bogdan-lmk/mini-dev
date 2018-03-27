@@ -349,10 +349,10 @@
 .pricing-content
   display:flex
 .pricing-title
-    font-size: rem(20px)
-    font-weight: 700
-    margin: 30px 0px 20px 0px
-    text-transform: uppercase
+  font-size: rem(20px)
+  font-weight: 700
+  margin: 30px 0px 20px 0px
+  text-transform: uppercase
 
 .single-price
   display: flex
@@ -362,23 +362,28 @@
   max-height: 100%
   border: 1px solid #e6e6e6
   align-items: center
+  &:hover
+    transition: all 0.4s ease-in-out
+    transform: scaleY(1.07)
+    cursor: pointer
   &:hover .single-price-header
     background: lightOrangeColor
     color: whiteColor
-    transition: all 0.7s ease
+    transition: all 0.4s ease-in-out
+    transform: scale(1.07)
   &:hover .single-price-separator
     background: whiteColor
-    transition: all 0.7s ease
+    transition: all 0.4s ease-in-out
+  &:hover .single-price-desc
+    background: whiteColor
+    transition: all 0.4s ease
   &:hover .single-price-header
     cursor: pointer
-    transition:  all 0.7s ease
-    transform: scale(1.07)
   &:hover .single-price-footer
     cursor: pointer
-    transition:  all 0.7s ease
-    transform: scale(1.1)
-  &:hover
-    cursor: pointer
+    transition:  all 0.4s ease-in-out
+    
+
 .single-price-header
   display: flex
   flex-direction: column
@@ -474,7 +479,7 @@
 
 .testimonial-gallery-dot--active
   opacity: 1
-  
+
 .portfolio-carousel
   display: flex
   flex-direction: column
